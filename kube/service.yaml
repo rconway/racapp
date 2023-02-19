@@ -5,10 +5,10 @@ metadata:
     app: myapp
   name: myapp
 spec:
+  selector:
+    app: myapp
   ports:
   - name: http
     port: 80
     protocol: TCP
     targetPort: 80
-  selector:
-    app: myapp
